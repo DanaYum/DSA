@@ -7,17 +7,17 @@ int binary_search(vector<int>& arr,int n,int target){
     int mid;
     while(low<=high){
         mid=(low+high)/2;
-        if(mid==target){
+        if(arr[mid]==target){
             return mid;
         }
-        else if(target<mid){
+        if(target<arr[mid]){
             high=mid-1;
         }
-        else if(target>mid){
+        else {
             low=mid+1;
         }
     }
-    return mid;
+    return -1;
 }
 int main(){
     int n=8;
