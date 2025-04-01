@@ -12,7 +12,7 @@ void decimalToBinary(int num) {
     
     string binary = "";
     while (num > 0) {
-        binary = to_string(num % 2) + binary;
+        binary =to_string(num % 2) + binary;
         num /= 2;
     }
     cout << binary;
